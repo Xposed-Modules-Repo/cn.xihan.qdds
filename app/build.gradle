@@ -1,0 +1,162 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp'
+}
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    namespace 'cn.xihan.qdds'
+    compileSdk rootProject.targetSdkVersion
+
+    signingConfigs {
+        xihantest {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            enableV3Signing true
+            enableV4Signing true
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "cn.xihan.qdds"
+        minSdk rootProject.minSdkVersion
+        targetSdk rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        // 仅保留中文语种的资源
+        resConfigs 'zh'
+
+        signingConfig signingConfigs.xihantest
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            // 调试模式开关
+            debuggable false
+            jniDebuggable false
+            // 压缩对齐开关
+            zipAlignEnabled true
+            // 移除无用的资源
+            shrinkResources false
+            // 代码混淆开关
+            minifyEnabled true
+            pseudoLocalesEnabled true
+            // 签名信息配置
+            signingConfig signingConfigs.xihantest
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.xihantest
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    // 避免 lint 检测出错时停止构建
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        abortOnError false
+    }
+
+    packagingOptions {
+
+        resources {
+
+            excludes += "META-INF/*******"
+            excludes += "**/*.txt"
+            excludes += "**/*.xml"
+            excludes += "**/*.properties"
+            excludes += "DebugProbesKt.bin"
+            excludes += "kotlin-tooling-metadata.json"
+        }
+
+        dex {
+            useLegacyPackaging true
+        }
+    }
+}
+
+dependencies {
+
+    implementation "androidx.core:core-ktx:$coreVersion"
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+
+    // 基础依赖
+    implementation "com.highcapable.yukihookapi:api:$YuKiHookVersion"
+    // ❗作为 Xposed 模块使用务必添加，其它情况可选
+    compileOnly 'de.robv.android.xposed:api:82'
+    // ❗作为 Xposed 模块使用务必添加，其它情况可选
+    ksp "com.highcapable.yukihookapi:ksp-xposed:$YuKiHookVersion"
+}
+
+//APK重命名
+println "********** apk outputs **********"
+android.applicationVariants.all { variant ->
+    def versionName = rootProject.appVersionName
+    def versionCode = rootProject.appVersionCode
+    variant.outputs.all {
+        if (variant.buildType.name == 'debug') {
+            //debug版本不重定义输出目录，也不重命名
+            return
+        }
+        if (outputFileName != null && outputFileName.endsWith(".apk")) {
+            // 命名格式“app_[版本号]_[其他信息].apk”
+            String fileName = "app-release_${versionName}_${versionCode}.apk"
+            //这里只能用相对路径，不然报错
+            outputFileName = new File(fileName)
+            println "outputFile=$outputFile"
+        }
+    }
+    //APK构建完成后，备份release版本及其混淆信息到指定目录
+    tasks.all { it ->
+        def maybeNeedCopy = false
+        if (it.name.startsWith("assemble") && it.name.endsWith("Release")) {
+            maybeNeedCopy = true
+        }
+        if (maybeNeedCopy) {
+            it.doLast {
+                variant.outputs.each { output ->
+                    def isRelease = variant.buildType.name == 'release'
+                    File outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk') && isRelease) {
+                        File targetDir = rootProject.file("归档/v${versionName}-${versionCode}")
+                        File targetDir2 = rootProject.file("release")
+                        targetDir.mkdirs()
+                        targetDir2.mkdirs()
+                        copy {
+                            from outputFile
+                            into targetDir
+                        }
+                        copy {
+                            from outputFile
+                            into targetDir2
+                        }
+                        copy {
+                            from rootProject.file("app/mapping.txt")
+                            into targetDir
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

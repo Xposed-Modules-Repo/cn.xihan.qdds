@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">QD</string>
+    <!-- Preference Titles -->
+    <string name="main_title">主要</string>
+    <string name="header">功能</string>
+    <string name="packageName">包名设置</string>
+    <string name="sw_autosignin">自动签到</string>
+    <!--自动关闭书架广告弹框-->
+    <!--启用旧版布局-->
+    <string name="sw_old_layout">启用旧版布局</string>
+    <!--本地至尊卡-->
+    <string name="sw_local_card">启用本地至尊卡</string>
+    <!--去书架右下角浮窗-->
+    <string name="sw_bookshelf_float">去书架右下角浮窗</string>
+    <!--去除底部导航栏中心广告-->
+    <string name="sw_bottom_ad">去除底部导航栏中心广告</string>
+</resources>
