@@ -1,7 +1,6 @@
 # QDReadHook
 ![](https://img.shields.io/badge/Android-7.0%20or%20above-brightgreen.svg)
 [![Latest Release](https://img.shields.io/github/release/Xposed-Modules-Repo/cn.xihan.qdds.svg)](../../releases)
-
 ![](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total)
 
 
