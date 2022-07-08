@@ -1,4 +1,5 @@
 # QDReadHook
+
 ![](https://img.shields.io/badge/Android-7.0%20or%20above-brightgreen.svg)
 [![Latest Release](https://img.shields.io/github/release/Xposed-Modules-Repo/cn.xihan.qdds.svg)](../../releases)
 ![](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total)
@@ -77,6 +78,18 @@
 
 ---
 
+## 常见问题
 
+* 开关功能不生效
 
+        注意看支持的版本,目前仅支持7.9.228-758~760
 
+        如果是Android 版本在10以上请查看/data/misc/某个文件夹/prefs/cn.xihan.qdds 这个文件夹权限是否可读,如果不可读手动设置一下，每次修改了配置都需要修改此权限
+
+* 没开启闪屏页却一直显示闪屏页
+
+        这种情况一般是因为本地已经有缓存了,最简单的方法是清除起点的数据,把要开的功能提前开好
+
+* 开启去广告无效
+
+        和上述一致，清数据重启即可
