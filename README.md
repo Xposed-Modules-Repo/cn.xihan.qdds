@@ -3,21 +3,80 @@
 [![Latest Release](https://img.shields.io/github/release/Xposed-Modules-Repo/cn.xihan.qdds.svg)](../../releases)
 ![](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total)
 
+---
 
+## 起点阅读 Xp模块
 
-起点阅读 Xp模块
+### 主要功能如下
 
-简单5个功能:
-1.自动签到
-2.新旧版布局
-3.本地至尊卡
-4.去书架右下角浮窗
-5.去底部导航栏中心广告
+---
 
-将从 7.9.228-758 开始支持 类名方法名字段名后续会出教程
+* 自动签到
 
-# 截图
-<img src="https://raw.githubusercontent.com/xihan123/QDReadHook/master/Screenshots/1.jpg" />
+* 新旧布局
+
+* 本地至尊卡
+
+* 隐藏底部小红点
+
+* 关闭青少年模式弹框
+
+### 广告相关
+
+---
+
+* 移除书架右下角浮窗
+
+        ps:简单粗暴拦截网络连接
+
+* 移除底部导航栏中心广告
+
+        ps:简单粗暴拦截网络连接
+
+* 禁用TX系广告
+
+        ps:简单粗暴拦截广告sdk动态加载以及网络连接
+
+### 闪屏页相关
+
+---
+
+* 闪屏页开关
+
+        ps:启用后恢复网络请求
+
+#### 自定义闪屏页
+
+* 启用显示全部按钮
+
+        ps:关闭可以理解为纯图片无发触发自定义跳转
+
+* 自定义触发跳转书籍详情
+
+        ps:可选跳转到书籍
+
+* 自定义闪屏类型
+
+        ps:原生的2种类型，上滑点击和纯按钮
+
+* 自定义闪屏图片
+
+        ps:需要本地图片的绝对地址,用的是原生方法,只修改了其中图片路径的地址参数,如是起点私有目录下的无需存储权限
+
+---
+
+## [类名方法名字段名获取方法](Tutorial.md)
+
+---
+
+## 截图
+
+![image](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/1.jpg?raw=true)
+![image](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/2.jpg?raw=true)
+![image](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/3.jpg?raw=true)
+
+---
+
 
 
 
