@@ -62,17 +62,19 @@
 
 * 屏蔽选项列表(自选)
 
-  * 搜索-发现(热词)
+  * 0.搜索-发现(热词)
 
-  * 搜索-热门作品榜
-  * 搜索-人气标签榜
-  * 搜索-为你推荐
-  * 精选-主页面
-  * 精选-分类
-  * 精选-分类-全部作品
-  * 精选-免费-新书入库
-  * 精选-畅销精选、主编力荐等更多
-  * 精选-新书强推、三江推荐
+  * 1.搜索-热门作品榜
+  * 2.搜索-人气标签榜
+  * 3.搜索-为你推荐
+  * 4.精选-主页面
+  * 5.精选-分类
+  * 6.精选-免费-免费推荐
+  * 7.精选-分类-全部作品
+  * 8.精选-免费-新书入库
+  * 9.精选-畅销精选、主编力荐等更多
+  * 10.精选-新书强推、三江推荐
+  * 11.每日导读
 
 * 需要屏蔽的作者列表
 
@@ -156,6 +158,95 @@
         5.修改上述所提到的文件夹权限
         6.清除起点数据
         7.打开起点
+
+---
+
+## Lspatch使用说明
+
+* 复制一份配置内容至"/sdcard/QDReader/option.json",如不存在就创建一个
+
+* 安装后启动前需要授予起点存储权限!!!要不然无法读取配置文件则不会生效,或者你设定错了可能会使用默认配置
+
+* 配置模板如下
+
+```json
+
+{
+// 广告配置
+ "advOption": {
+// 禁用广告
+  "enableDisableAdv": true,
+// 禁用检查更新
+  "enableDisableCheckUpdate": true,
+// 移除书架底部导航栏广告
+  "enableRemoveBookshelfBottomAd": true,
+// 移除书架右下角浮窗
+  "enableRemoveBookshelfFloat": true
+ },
+// 主配置
+ "mainOption": {
+// 启用自动签到
+  "enableAutoSign": true,
+// 启用关闭青少年模式弹框
+  "enableDisableQSNModeDialog": true,
+// 启用隐藏底部小红点
+  "enableHideBottomDot": true,
+// 启用本地至尊卡
+  "enableLocalCard": true,
+// 启用旧版布局 ps:此模式下开启后无法自动签到
+  "enableOldLayout": false,
+// 包名设置，建议不要动
+  "packageName": "com.qidian.QDReader"
+ },
+// 屏蔽相关
+ "shieldOption": {
+// 作者名称
+  "authorList": [
+   "示例1",
+   "示例2"
+  ],
+// 书籍关键词
+  "bookNameList": [
+   "我",
+   "魔"
+  ],
+// 书类型
+  "bookTypeList": [
+   "历史",
+   "都市",
+   "无敌流",
+   "系统流"
+  ],
+// 0~11对应上方屏蔽列表(自选)
+  "shieldOptionValueSet": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11"
+  ]
+ },
+// 闪屏页配置 ps:此模式目前仅支持开关,不能自定义!!!
+ "splashOption": {
+  "customBookId": "",
+  "customSplashImageFilePath": "",
+  "customSplashType": 0,
+  "enableCustomSplash": false,
+  "enableCustomSplashAllButton": false,
+  "enableSplash": false
+ }
+}
+
+```
+
+* 因为修改了签名,所以快速登录无法使用,只能用手机号登录!!!所以如果可以还是使用 Xp 模式
 
 ---
 
