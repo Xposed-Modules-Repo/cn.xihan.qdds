@@ -10,6 +10,10 @@
 
 使用 [YukiHookAPI](https://github.com/fankes/YukiHookAPI)
 
+* 使用前注意给予起点存储权限!!!(1.1.2+)
+
+* 已支持动态配置,在起点-我的-左上角设置里面-阅读设置/模块设置(长按)(1.1.2+)
+
 * 目前支持 758~768、772、776、780、784、788 版本
 
 * 暂时提高版本号范围以支持一些不容易改变的类
@@ -84,6 +88,10 @@
 
         ps:单字威力巨大!!!甚至可能导致看上去布局显示错乱。多个关键词使用方法举例:"心声;四合院;不想",用英文的";"
 
+* 书类型增强屏蔽(1.1.2+)
+
+        ps:开启后所有类型里面关键词对上就会触发屏蔽，如"仙侠"则会"古典仙侠"、"XX仙侠"只要包括了"仙侠"二字，所以依然是单字威力巨大!!!
+
 * 需要屏蔽书的类型
 
         ps:填入完整的如"仙侠"，但是"古典仙侠"不会被屏蔽，需要再加入"古典仙侠"。后期可能会加入加强版,多个关键词使用方法如上
@@ -125,10 +133,12 @@
 
 ## 截图
 
-![image](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/1.jpg?raw=true)
-![image](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/2.jpg?raw=true)
-![image](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/3.jpg?raw=true)
-![image](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/4.jpg?raw=true)
+![image1](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/1.jpg?raw=true)
+![image2](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/2.jpg?raw=true)
+![image3](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/3.jpg?raw=true)
+![image4](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/4.jpg?raw=true)
+![image5](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/5.jpg?raw=true)
+![image6](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/6.jpg?raw=true)
 ---
 
 ## 常见问题
@@ -137,7 +147,9 @@
 
         注意看上述所提到支持的版本号
 
-        如还不生效则查看/data/misc/某个文件夹/prefs/cn.xihan.qdds 这个文件夹权限是否可读,如果不可读手动设置一下，每次修改了配置都需要修改此权限,并应用子文件 权限 都设定为755最佳。还不行就把模块卸载了重新安装，激活后先去把配置调整好，再去上述路径改权限，完事最好清下起点数据，打开就完美了!!!
+        1.1.2版本以前如还不生效则查看/data/misc/某个文件夹/prefs/cn.xihan.qdds 这个文件夹权限是否可读,如果不可读手动设置一下，每次修改了配置都需要修改此权限,并应用子文件 权限 都设定为755最佳。还不行就把模块卸载了重新安装，激活后先去把配置调整好，再去上述路径改权限，完事最好清下起点数据，打开就完美了!!!
+
+        1.1.2及以后则查看起点是否有存储权限，查看是否存在"/sdcard/QDReader/option.json"这个文件
 
 * 没开启闪屏页却一直显示闪屏页
 
@@ -149,7 +161,7 @@
 
 * ~~目前去青少年模式弹框仅仅只是防止频繁弹，不是完全去掉,我之前测试用隔一会弹一下，开启后仅弹一次~~ 1.0.2+版本是通过 Hook 自定义Dialog 的 **show()** 方法，可能有副作用，暂时未发现
 
-* 模块初次使用建议操作流程
+* ~~模块初次使用建议操作流程~~1.1.2及以上无需如此麻烦
 
         1.安装好模块后把模块和起点都强行停止运行
         2.激活(勾选)模块
@@ -163,88 +175,9 @@
 
 ## Lspatch使用说明
 
-* 复制一份配置内容至"/sdcard/QDReader/option.json",如不存在就创建一个
-
 * 安装后启动前需要授予起点存储权限!!!要不然无法读取配置文件则不会生效,或者你设定错了可能会使用默认配置
 
-* 配置模板如下
-
-```json
-
-{
-// 广告配置
- "advOption": {
-// 禁用广告
-  "enableDisableAdv": true,
-// 禁用检查更新
-  "enableDisableCheckUpdate": true,
-// 移除书架底部导航栏广告
-  "enableRemoveBookshelfBottomAd": true,
-// 移除书架右下角浮窗
-  "enableRemoveBookshelfFloat": true
- },
-// 主配置
- "mainOption": {
-// 启用自动签到
-  "enableAutoSign": true,
-// 启用关闭青少年模式弹框
-  "enableDisableQSNModeDialog": true,
-// 启用隐藏底部小红点
-  "enableHideBottomDot": true,
-// 启用本地至尊卡
-  "enableLocalCard": true,
-// 启用旧版布局 ps:此模式下开启后无法自动签到
-  "enableOldLayout": false,
-// 包名设置，建议不要动
-  "packageName": "com.qidian.QDReader"
- },
-// 屏蔽相关
- "shieldOption": {
-// 作者名称
-  "authorList": [
-   "示例1",
-   "示例2"
-  ],
-// 书籍关键词
-  "bookNameList": [
-   "我",
-   "魔"
-  ],
-// 书类型
-  "bookTypeList": [
-   "历史",
-   "都市",
-   "无敌流",
-   "系统流"
-  ],
-// 0~11对应上方屏蔽列表(自选)
-  "shieldOptionValueSet": [
-   "0",
-   "1",
-   "2",
-   "3",
-   "4",
-   "5",
-   "6",
-   "7",
-   "8",
-   "9",
-   "10",
-   "11"
-  ]
- },
-// 闪屏页配置 ps:此模式目前仅支持开关,不能自定义!!!
- "splashOption": {
-  "customBookId": "",
-  "customSplashImageFilePath": "",
-  "customSplashType": 0,
-  "enableCustomSplash": false,
-  "enableCustomSplashAllButton": false,
-  "enableSplash": false
- }
-}
-
-```
+* 已支持动态配置(1.1.2+)
 
 * 因为修改了签名,所以快速登录无法使用,只能用手机号登录!!!所以如果可以还是使用 Xp 模式
 
