@@ -14,7 +14,7 @@
 
 * 已支持动态配置,在起点-我的-左上角设置里面-阅读设置/模块设置(长按)(1.1.2+)
 
-* 目前支持 758~768、772、776、780、784、788 版本
+* 目前支持 758~768、772、776、780、784、788、792版本
 
 * 暂时提高版本号范围以支持一些不容易改变的类
 
@@ -46,6 +46,10 @@
 
         ps:简单粗暴拦截网络连接
 
+* 移除我-中心广告
+
+        ps:简单粗暴拦截网络连接
+
 * 禁止检测更新(1.0.7+)
 
         ps:简单粗暴拦截相关方法
@@ -60,7 +64,7 @@
   
         ps:简单粗暴拦截广告sdk动态加载以及网络连接
 
-### 屏蔽相关(1.1.0+ 目前仅支持788版本)
+### 屏蔽相关(1.1.0+ 支持788+版本)
 
 ---
 
@@ -131,6 +135,18 @@
 
 ---
 
+### 隐藏控件相关(1.1.3+)
+
+* 隐藏底部导航栏-发现
+
+* 我-隐藏控件(自选,开启后重启应用即可获取到列表)
+
+#### 效果图
+
+![我-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/我-隐藏控件.jpg?raw=true)
+
+---
+
 ## 截图
 
 ![image1](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/1.jpg?raw=true)
@@ -139,6 +155,7 @@
 ![image4](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/4.jpg?raw=true)
 ![image5](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/5.jpg?raw=true)
 ![image6](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/6.jpg?raw=true)
+![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/7.jpg?raw=true)
 ---
 
 ## 常见问题
