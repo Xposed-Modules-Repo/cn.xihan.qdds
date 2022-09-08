@@ -14,11 +14,17 @@
 
 * 已支持动态配置,在起点-我的-左上角设置里面-阅读设置/模块设置(长按)(1.1.2+)
 
-* 目前支持 758~768、772、776、780、784、788、792、796版本
+* 目前支持 758~768、772、776、780、784、788、792、796、800版本
 
 * 暂时提高版本号范围以支持一些不容易改变的类
 
-* [支持的版本合集](https://xihan.lanzouv.com/b0413c6he) 密码:xihan
+* 下载地址
+
+  * [支持的版本合集蓝奏云](https://xihan.lanzouv.com/b0413c6he) 密码:xihan
+
+  * [酷安](https://www.coolapk.com/apk/5066/)
+
+  * [官方网站](https://www.yuewen.com/app.html#appqd)
 
 ### 主要功能如下
 
@@ -99,7 +105,7 @@
 
 * 需要屏蔽书的类型
 
-        ps:填入完整的如"仙侠"，但是"古典仙侠"不会被屏蔽，需要再加入"古典仙侠"。后期可能会加入加强版,多个关键词使用方法如上
+      ps:填入完整的如"仙侠"，但是"古典仙侠"不会被屏蔽，需要再加入"古典仙侠"。多个关键词使用方法如上
 
 #### 效果图
 
@@ -184,7 +190,7 @@
 
         和上述一致，清数据重启即可
 
-* ~~目前去青少年模式弹框仅仅只是防止频繁弹，不是完全去掉,我之前测试用隔一会弹一下，开启后仅弹一次~~ 1.0.2+版本是通过 Hook 自定义Dialog 的 **show()** 方法，可能有副作用，暂时未发现
+* ~~目前去青少年模式弹框仅仅只是防止频繁弹，不是完全去掉,我之前测试用隔一会弹一下，开启后仅弹一次~~ 1.0.2+版本是通过 Hook 自定义Dialog 的 **show()** 方法，会导致投月票或者特殊订阅弹框不显示(1.1.6+已修复此问题) 1.1.6+是通过拦截上级调用
 
 * ~~模块初次使用建议操作流程~~1.1.2及以上无需此操作，授予起点存储权限即可
 
@@ -210,6 +216,23 @@
 
 ## 如果觉得这个模块对您有用，可扫描下方二维码随意打赏,要是能打赏个 10.24 🐵就太👍了。您的支持就是我更新的动力
 
-![zfb](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/zfb.jpg?raw=true)
-![wx](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/wx.png?raw=true)
-![qq](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/qq.png?raw=true)
+<table>
+<tr>
+<td align=center>支付宝</td>
+<td align=center>微信</td>
+<td align=center>QQ</td>
+</tr>
+
+<tr>
+<td>
+<img src="https://github.com/xihan123/QDReadHook/blob/master/Screenshots/zfb.jpg?raw=true" width=270 >
+</td>
+<td>
+<img src="https://github.com/xihan123/QDReadHook/blob/master/Screenshots/wx.png?raw=true" width=270 >
+</td>
+<td>
+<img src="https://github.com/xihan123/QDReadHook/blob/master/Screenshots/qq.png?raw=true" width=270 >
+</td>
+</tr>
+
+</table>
