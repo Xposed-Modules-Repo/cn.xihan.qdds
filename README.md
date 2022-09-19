@@ -144,6 +144,8 @@
 
 ### 隐藏控件相关(1.1.3+)
 
+* 隐藏书架-每日导读(1.1.9+)
+
 * 搜索一刀切(1.1.4+)
 
         可能导致搜索历史也无法看见喔!~
@@ -158,8 +160,9 @@
 
 #### 效果图
 
+![书架](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/书架.jpg?raw=true)
 ![我-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/我-隐藏控件.jpg?raw=true)
-![我-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/搜索一刀切.jpg?raw=true)
+![搜索一刀切](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/搜索一刀切.jpg?raw=true)
 
 ---
 
@@ -183,8 +186,13 @@
         1.1.2版本以前如还不生效则查看/data/misc/某个文件夹/prefs/cn.xihan.qdds 这个文件夹权限是否可读,如果不可读手动设置一下，每次修改了配置都需要修改此权限,并应用子文件 权限 都设定为755最佳。还不行就把模块卸载了重新安装，激活后先去把配置调整好，再去上述路径改权限，完事最好清下起点数据，打开就完美了!!!
 
         1.1.2及以后则查看起点是否有存储权限，查看是否存在"/sdcard/QDReader/option.json"这个文件(没有就创建一个)
+
         ps:根据版本不同，显示的路径可能也不同，可能是"/storage/emulated/0/QDReader/option.json".
         如果使用系统自带文件管理器，直接在"根目录(内部存储)"创建文件夹"QDReader"即可
+
+        如果上述都不行，那就试着清除起点数据或者重装模块，也可能需要重启一下手机。
+
+        还不行就附上日志提issues或酷安留言私信我即可(语气不要太冲，说的好像我欠你啥的，上来就质疑我的也不一定会回复。以为自己是谁啊，你用不了我就一定要让你也能用上，我还能远程施法单单让你用不了不成?)
 
 * 没开启闪屏页却一直显示闪屏页
 
