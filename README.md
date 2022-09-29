@@ -178,7 +178,7 @@
 ![书架](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/书架.jpg?raw=true)
 ![我-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/我-隐藏控件.jpg?raw=true)
 ![搜索一刀切](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/搜索一刀切.jpg?raw=true)
-![书籍详情-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/搜书籍详情-隐藏控件.jpg?raw=true)
+![书籍详情-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/书籍详情-隐藏控件.jpg?raw=true)
 
 ---
 
