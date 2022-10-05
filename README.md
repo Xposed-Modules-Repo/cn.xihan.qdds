@@ -40,25 +40,17 @@
 
 ---
 
-* 移除书架活动弹框(1.1.8+)
+* 禁用书架活动弹框(1.1.8+)
 
-        ps:简单粗暴删除调用数据
+* 禁用书架右下角浮窗
 
-* 移除书架右下角浮窗
+* 禁用底部导航栏中心广告
 
-        ps:简单粗暴拦截网络连接,反射获取控件隐藏
+* 禁用我-中心广告
 
-* 移除底部导航栏中心广告
-
-        ps:简单粗暴拦截网络连接
-
-* 移除我-中心广告
-
-        ps:简单粗暴拦截网络连接
+* 禁用阅读页浮窗广告(1.2.6|812+)
 
 * 禁止检测更新(1.0.7+)
-
-        ps:简单粗暴拦截相关方法
 
 * 禁用广告
 
@@ -68,8 +60,6 @@
 
   * GDT广告
   
-        ps:简单粗暴拦截广告sdk动态加载以及网络连接
-
 ### 屏蔽相关(1.1.0+ 支持788+版本)
 
 ---
@@ -186,6 +176,27 @@
 
 ---
 
+### 替换相关(1.2.6+|812+)
+
+* 净化替换章节标题以及正文
+
+        不清楚或者不明白的请不要随意打开使用。可使用正则表达式或者字符串进行替换,开关需要重启应用,启用后规则更改实时生效
+
+        规则的最简单使用例子:如果正文中出现"东躲XC"、"XZ"，被屏蔽的词为"西藏",即可用正则表达式"XC|XZ"替换为"西藏"。亦或者感觉主角或配角名冒犯到你，即可新建一个规则，"龙傲天" -> "凤傲天"
+
+        规则是全局的，目前不支持指定书名等。规则最好不要重复或者冲突，不然可能会出现无法预料的错误,这种时候删除重复或者冲突的规则即可。如果不知道怎么用正则表达式，可以去网上学习一下或者酷安私信我，如果我有空，会帮你搞定
+
+        点按编辑，长按删除
+
+        目前只是简单的测试一下，后续不一定会继续维护或者更新此功能
+
+#### 效果图
+
+![书籍详情-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/替换主角名-0.jpg?raw=true)
+![书籍详情-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/替换主角名-1.jpg?raw=true)
+
+---
+
 ## 截图
 
 ![image1](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/1.jpg?raw=true)
@@ -195,6 +206,8 @@
 ![image5](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/5.jpg?raw=true)
 ![image6](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/6.jpg?raw=true)
 ![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/7.jpg?raw=true)
+![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/8.jpg?raw=true)
+![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/9.jpg?raw=true)
 ---
 
 ## 常见问题
