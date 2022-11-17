@@ -40,6 +40,49 @@
 
 * 本地至尊卡
 
+* 解锁会员卡专属背景(827+||1.3.1+)
+
+* 自定义阅读页背景路径(827+||1.3.1+)
+
+      自定义的路径目前为: "/sdcard/Download/QDReader/ReaderTheme/"
+      首先去个性化背景随便下载一个并且应用，然后到上面的路径里面去替换相应内容，重启起点就可以看到效果了，不是所有图片都可以，具体自己试，模板图片等我会一并放到网盘
+      最少需要一个背景图，预览图无所谓，其次都要使用十六进制颜色代码，具体可参考模板
+      另外其实还支持PAG动画，但是不建议弄，弄不好掉帧严重，看反馈的多我就顺便教一下咋加上
+
+```json
+ {
+  "colors": {
+    // 字体颜色    
+    "font": "#203322",
+    // 背景颜色
+    "background": "#E6F1E3",
+    // 背景高亮颜色
+    "backgroundLight": "#F8FFF8",
+    // 高亮颜色
+    "highLight": "#336C47",
+    // tint颜色
+    "tint": "#336C47"
+  },
+  "version": 1,
+  // 预览图
+  "previewImage": "slice_bg.png",
+  "bg": {
+    // 忘记干啥的了 不建议改
+    "type": 2,
+    // 背景图片名称
+    "image": "readBg.jpg"
+  }
+}
+
+ ```
+
+ #### 效果图
+
+![阅读页背景设置](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/阅读页背景设置.png?raw=true)
+![阅读页背景设置文件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/阅读页背景设置文件.png?raw=true)
+![阅读页背景](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/阅读页背景.png?raw=true)
+---
+ 
 ### 广告相关
 
 ---
@@ -69,6 +112,7 @@
   * 章末福利(1.2.9+|812+)
   * 章末广告(1.2.9+|812+)
   * 章末求票(1.2.9+|812+)
+  * 章末底部月票打赏红包(827+||1.3.1+)
   
 * 禁止检测更新(1.0.7+)
 
@@ -222,14 +266,15 @@
 ## 截图
 
 ![image1](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/1.jpg?raw=true)
-![image2](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/2.jpg?raw=true)
-![image3](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/3.jpg?raw=true)
-![image4](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/4.jpg?raw=true)
-![image5](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/5.jpg?raw=true)
-![image6](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/6.jpg?raw=true)
+![image2](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/2.png?raw=true)
+![image3](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/3.png?raw=true)
+![image4](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/4.png?raw=true)
+![image5](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/5.png?raw=true)
+![image6](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/6.png?raw=true)
 ![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/7.jpg?raw=true)
-![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/8.jpg?raw=true)
-![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/9.jpg?raw=true)
+![image8](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/8.png?raw=true)
+![image9](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/9.jpg?raw=true)
+![image10](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/10.png?raw=true)
 ---
 
 ## 常见问题
