@@ -1,5 +1,6 @@
 # QDReadHook
 
+[![](https://data.jsdelivr.com/v1/package/gh/xihan123/QDReadHook/badge?style=rounded)](https://www.jsdelivr.com/package/gh/xihan123/QDReadHook)
 ![above](https://img.shields.io/badge/Android-7.0%20or%20above-brightgreen.svg)
 [![Latest Release](https://img.shields.io/github/release/Xposed-Modules-Repo/cn.xihan.qdds.svg)](../../releases)
 ![downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total)
@@ -28,7 +29,7 @@
 
   * [官方网站](https://www.yuewen.com/app.html#appqd)
   
-* QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt") <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
+* QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=y-a3g2D8EF9ofe8IBh80uTvihgheX3yt&jump_from=webapi&authKey=XpbjgoeAupfKXFmt4Tp5PoWKYSxeg1/AZSUS/GW5l7jf/QmGEEGmx/kuRGA7kwCG) <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
 
 ### 主要功能如下
 
@@ -80,9 +81,9 @@
 
  #### 效果图
 
-![阅读页背景设置](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/阅读页背景设置.png?raw=true)
-![阅读页背景设置文件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/阅读页背景设置文件.png?raw=true)
-![阅读页背景](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/阅读页背景.png?raw=true)
+![阅读页背景设置](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景设置.png)
+![阅读页背景设置文件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景设置文件.png)
+![阅读页背景](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景.png)
 ---
  
 ### 广告相关
@@ -120,7 +121,7 @@
 
 #### 效果图
 
-![阅读页-章末](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/阅读页-章末.jpg?raw=true)
+![阅读页-章末](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页-章末.jpg)
 
 ---
 
@@ -166,8 +167,8 @@
 
 #### 效果图
 
-![精选-主页面](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/精选-主页面.jpg?raw=true)
-![全部作品-分类](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/全部作品-分类.jpg?raw=true)
+![精选-主页面](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/精选-主页面.jpg)
+![全部作品-分类](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/全部作品-分类.jpg)
 
 ---
 
@@ -237,10 +238,10 @@
 
 #### 效果图
 
-![书架](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/书架.jpg?raw=true)
-![我-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/我-隐藏控件.jpg?raw=true)
-![搜索一刀切](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/搜索一刀切.jpg?raw=true)
-![书籍详情-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/书籍详情-隐藏控件.jpg?raw=true)
+![书架](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/书架.jpg)
+![我-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/我-隐藏控件.jpg)
+![搜索一刀切](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/搜索一刀切.jpg)
+![书籍详情-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/书籍详情-隐藏控件.jpg)
 
 ---
 
@@ -260,23 +261,23 @@
 
 #### 效果图
 
-![书籍详情-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/替换主角名-0.jpg?raw=true)
-![书籍详情-隐藏控件](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/替换主角名-1.jpg?raw=true)
+![书籍详情-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/替换主角名-0.jpg)
+![书籍详情-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/替换主角名-1.jpg)
 
 ---
 
 ## 截图
 
-![image1](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/1.jpg?raw=true)
-![image2](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/2.png?raw=true)
-![image3](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/3.png?raw=true)
-![image4](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/4.png?raw=true)
-![image5](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/5.png?raw=true)
-![image6](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/6.png?raw=true)
-![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/7.jpg?raw=true)
-![image8](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/8.png?raw=true)
-![image9](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/9.jpg?raw=true)
-![image10](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/10.png?raw=true)
+![image1](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/1.jpg)
+![image2](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/2.png)
+![image3](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/3.png)
+![image4](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/4.png)
+![image5](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/5.png)
+![image6](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/6.png)
+![image7](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/7.jpg)
+![image8](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/8.png)
+![image9](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/9.jpg)
+![image10](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/10.png)
 ---
 
 ## 常见问题
@@ -341,13 +342,13 @@
 
 <tr>
 <td>
-<img src="https://github.com/xihan123/QDReadHook/blob/master/Screenshots/zfb.jpg?raw=true" width=270 >
+<img src="https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/zfb.jpg" width=270 >
 </td>
 <td>
-<img src="https://github.com/xihan123/QDReadHook/blob/master/Screenshots/wx.png?raw=true" width=270 >
+<img src="https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/wx.png" width=270 >
 </td>
 <td>
-<img src="https://github.com/xihan123/QDReadHook/blob/master/Screenshots/qq.png?raw=true" width=270 >
+<img src="https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/qq.png" width=270 >
 </td>
 </tr>
 
@@ -357,4 +358,4 @@
 
 ## 亦或者饿了么扫个码支持也行
 
-![image7](https://github.com/xihan123/QDReadHook/blob/master/Screenshots/elm.png?raw=true)
+![image7](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/elm.png)
