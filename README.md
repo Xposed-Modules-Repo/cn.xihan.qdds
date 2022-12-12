@@ -27,6 +27,8 @@
   * [酷安](https://www.coolapk.com/apk/5066/)
 
   * [官方网站](https://www.yuewen.com/app.html#appqd)
+  
+* QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt") <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
 
 ### 主要功能如下
 
