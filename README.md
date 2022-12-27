@@ -29,7 +29,7 @@
 
   * [官方网站](https://www.yuewen.com/app.html#appqd)
   
-* QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=y-a3g2D8EF9ofe8IBh80uTvihgheX3yt&jump_from=webapi&authKey=XpbjgoeAupfKXFmt4Tp5PoWKYSxeg1/AZSUS/GW5l7jf/QmGEEGmx/kuRGA7kwCG) <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
+* QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=XePSQKPRuk2S_5L9r8foM5KbRHS5_D12&jump_from=webapi&authKey=yHyuPWyfsOMUYWMF2POgMMDJcS1GhAJVVB6V8gq8Jc0pL8LtLtUFF8Xnsa6de1Wa) <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=XePSQKPRuk2S_5L9r8foM5KbRHS5_D12&jump_from=webapi&authKey=yHyuPWyfsOMUYWMF2POgMMDJcS1GhAJVVB6V8gq8Jc0pL8LtLtUFF8Xnsa6de1Wa"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
 
 ### 主要功能如下
 
