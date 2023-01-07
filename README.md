@@ -28,8 +28,8 @@
   * [酷安](https://www.coolapk.com/apk/5066/)
 
   * [官方网站](https://www.yuewen.com/app.html#appqd)
-  
-* QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=XePSQKPRuk2S_5L9r8foM5KbRHS5_D12&jump_from=webapi&authKey=yHyuPWyfsOMUYWMF2POgMMDJcS1GhAJVVB6V8gq8Jc0pL8LtLtUFF8Xnsa6de1Wa) <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=XePSQKPRuk2S_5L9r8foM5KbRHS5_D12&jump_from=webapi&authKey=yHyuPWyfsOMUYWMF2POgMMDJcS1GhAJVVB6V8gq8Jc0pL8LtLtUFF8Xnsa6de1Wa"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
+
+* QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt) <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
 
 ### 主要功能如下
 
@@ -41,11 +41,21 @@
 
 * 旧书架布局(827+||1.3.0+)
 
-* 本地至尊卡
+* 本地至尊卡(仅美观，无任何实际作用!!!)
 
-* 免广告领取奖励
+* 免广告领取奖励(854+||1.4.0+)
 
       开启后可能会导致闪退，如已发生可在配置文件中搜索 "enableFreeAdReward" 后面的 "true" 改为 "flase"
+
+      "免广告领取奖励自动退出时间" 意为在看广告页面多少秒后自动退出 如果你设备网络加载的慢，则会还没出现就自动退出了，这种时候就需要把这个时间设定成符合你设备网速的时间，亦或者不需要就把此值设定高一些如 "2147483647"
+
+* 忽略粉丝值跳转加群限制(854+||1.4.0+)
+
+     <font size='6' color='red'> 声明:此功能仅为那些想进书友群看番外的书友提供一个方便，禁止用作骚扰辱骂等行为，使用此功能造成的一切后果自负，与模块开发者无关!!! </font>
+
+* 忽略限时免费批量订阅限制(854+||1.4.0+)
+
+      仅解除限免书籍目录界面"批量订阅"按钮无法点击限制，无其他任何额外效果
 
 * 解锁会员卡专属背景(827+||1.3.1+)
 
@@ -83,13 +93,13 @@
 
  ```
 
- #### 效果图
+#### 效果图
 
 ![阅读页背景设置](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景设置.png)
 ![阅读页背景设置文件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景设置文件.png)
 ![阅读页背景](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景.png)
 ---
- 
+
 ### 广告相关
 
 ---
@@ -120,7 +130,7 @@
   * 章末广告(1.2.9+|812+)
   * 章末求票(1.2.9+|812+)
   * 章末底部月票打赏红包(827+||1.3.1+)
-  
+
 * 禁止检测更新(1.0.7+)
 
 #### 效果图
@@ -323,12 +333,12 @@
         6.清除起点数据
         7.打开起点
 
-* 部分功能之前好好的，突然失效，**1.2.9+ 配置文件模型改变，部分设定需要重新设置!!!** 开关以及配置都正常却失效日志也没有。可以理解为被热修复了，一般来说更新最新版即可或者提Issues 
+* 部分功能之前好好的，突然失效，**1.2.9+ 配置文件模型改变，部分设定需要重新设置!!!** 开关以及配置都正常却失效日志也没有。可以理解为被热修复了，一般来说更新最新版即可或者提Issues
 
 * 如提示 "**Manifest文件中Activity/Service/Permission的声明有问题或者Permission权限未授予**"
 把 "**广告配置**" 中 "**GDT(TX)广告**" 去掉勾选
 
-* 如提示 "**激励广告拉取失败,详细错误码:50000**" 则检查设备网络，**DNS**或者**Hosts** 是否拦截了"**us.l.qq.com**"、"**tangram.e.qq.com**"、"**dp3.qq.com**"域名
+* 如提示 "**激励广告拉取失败,详细错误码:50000**" 则检查设备网络，**DNS**或者**Hosts** 是否拦截了"**e.qq.com**"、"**gdt.qq.com**"、"**gtimg.cn**"、"**gdtimg.com**"域名
 
 ---
 
