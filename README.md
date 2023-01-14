@@ -2,8 +2,9 @@
 
 [![](https://data.jsdelivr.com/v1/package/gh/xihan123/QDReadHook/badge?style=rounded)](https://www.jsdelivr.com/package/gh/xihan123/QDReadHook)
 ![above](https://img.shields.io/badge/Android-7.0%20or%20above-brightgreen.svg)
-[![Latest Release](https://img.shields.io/github/release/Xposed-Modules-Repo/cn.xihan.qdds.svg)](../../releases)
-![downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total)
+[![Latest Release](https://img.shields.io/github/release/xihan123/QDReadHook.svg)](../../releases)
+![downloads](https://img.shields.io/github/downloads/xihan123/QDReadHook/total)
+[![Blank](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total?label=LSPosed%20Repo&logo=Android&style=flat&labelColor=F48FB1&logoColor=ffffff)](https://github.com/Xposed-Modules-Repo/cn.xihan.qdds/releases)
 
 ---
 
@@ -15,7 +16,7 @@
 
 * 已支持动态配置,在起点-我的-左上角设置里面-阅读设置/模块设置(长按)(1.1.2+)
 
-* 目前支持 758~768、772、776、780、784、788、792、796、800、804、808、812、827、834、842、843、850、854版本
+* 目前支持 758~768、772、776、780、784、788、792、796、800、804、808、812、827、834、842、843、850、854、858、860版本
 
 * 暂时提高版本号范围以支持一些不容易改变的类
 
@@ -31,7 +32,25 @@
 
 * QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt) <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
 
-### 主要功能如下
+## 目录
+
+* [主要功能](#主要功能)
+
+* [广告相关](#广告相关)
+
+* [屏蔽相关屏蔽相关(1.1.0+ 支持788+版本)](#屏蔽相关)
+
+* [闪屏页相关](#闪屏页相关)
+
+* [隐藏控件相关(1.1.3+)](#隐藏控件相关)
+
+* [替换相关(1.2.6+|812+)](#替换相关)
+
+* [常见问题](#常见问题)
+
+* [打赏](#打赏)
+
+### 主要功能
 
 ---
 
@@ -139,7 +158,7 @@
 
 ---
 
-### 屏蔽相关(1.1.0+ 支持788+版本)
+### 屏蔽相关
 
 ---
 
@@ -214,7 +233,7 @@
 
 ---
 
-### 隐藏控件相关(1.1.3+)
+### 隐藏控件相关
 
 * 主页-隐藏控件
 
@@ -259,7 +278,7 @@
 
 ---
 
-### 替换相关(1.2.6+|812+)
+### 替换相关
 
 * 净化替换章节标题以及正文
 
@@ -351,6 +370,8 @@
 * 因为修改了签名,所以快速登录无法使用,只能用手机号登录!!!所以如果可以还是使用 Xp 模式
 
 ---
+
+## 打赏
 
 ## 如果觉得这个模块对您有用，可扫描下方二维码随意打赏,要是能打赏个 10.24 🐵就太👍了。您的支持就是我更新的动力
 
