@@ -12,11 +12,11 @@
 
 使用 [YukiHookAPI](https://github.com/fankes/YukiHookAPI)
 
-* 使用前注意给予起点存储权限!!!(1.1.2+)
+* 使用前注意给予起点存储权限
 
-* 已支持动态配置,在起点-我的-左上角设置里面-阅读设置/模块设置(长按)(1.1.2+)
+* 设置页面在:起点->我的->左上角设置->阅读设置/模块设置(长按)(1.1.2+)
 
-* 目前支持 758~768、772、776、780、784、788、792、796、800、804、808、812、827、834、842、843、850、854、858、860版本
+* 目前支持 758~768、772、776、780、784、788、792、796、800、804、808、812、827、834、842、843、850、854、858、860、868版本
 
 * 暂时提高版本号范围以支持一些不容易改变的类
 
@@ -32,288 +32,12 @@
 
 * QD模块交流群: [727983520](https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt) <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JT0K0sZEJHm4CnsRjRTKxY3uL-xoO6CG&jump_from=webapi&authKey=yGg3h07NWBGGF4TmxtRNykIQ4HLM4t/uxrAtqHx15zgRmIR4sC14HxKYOq376ekt"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QD模块交流群" title="QD模块交流群"></a>
 
-## 目录
-
-* [主要功能](#主要功能)
-
-* [广告相关](#广告相关)
-
-* [屏蔽相关屏蔽相关(1.1.0+ 支持788+版本)](#屏蔽相关)
-
-* [闪屏页相关](#闪屏页相关)
-
-* [隐藏控件相关(1.1.3+)](#隐藏控件相关)
-
-* [替换相关(1.2.6+|812+)](#替换相关)
-
-* [常见问题](#常见问题)
-
-* [打赏](#打赏)
-
-### 主要功能
-
----
-
-* 自动签到
-
-* 新旧布局(800+版本已不存在旧版布局)
-
-* 旧书架布局(827+||1.3.0+)
-
-* 本地至尊卡(仅美观，无任何实际作用!!!)
-
-* 免广告领取奖励(854+||1.4.0+)
-
-      开启后可能会导致闪退，如已发生可在配置文件中搜索 "enableFreeAdReward" 后面的 "true" 改为 "flase"
-
-      "免广告领取奖励自动退出时间" 意为在看广告页面多少秒后自动退出 如果你设备网络加载的慢，则会还没出现就自动退出了，这种时候就需要把这个时间设定成符合你设备网速的时间，亦或者不需要就把此值设定高一些如 "2147483647"
-
-* 忽略粉丝值跳转加群限制(854+||1.4.0+)
-
-     <font size='6' color='red'> 声明:此功能仅为那些想进书友群看番外的书友提供一个方便，禁止用作骚扰辱骂等行为，使用此功能造成的一切后果自负，与模块开发者无关!!! </font>
-
-* 忽略限时免费批量订阅限制(854+||1.4.0+)
-
-      仅解除限免书籍目录界面"批量订阅"按钮无法点击限制，无其他任何额外效果
-
-* 解锁会员卡专属背景(827+||1.3.1+)
-
-* 自定义阅读页背景路径(827+||1.3.1+)
-
-      自定义的路径目前为: "/sdcard/Download/QDReader/ReaderTheme/"
-      首先去个性化背景随便下载一个并且应用，然后到上面的路径里面去替换相应内容，重启起点就可以看到效果了，不是所有图片都可以，具体自己试，模板图片等我会一并放到网盘
-      最少需要一个背景图，预览图无所谓，其次都要使用十六进制颜色代码，具体可参考模板
-      另外其实还支持PAG动画，但是不建议弄，弄不好掉帧严重，看反馈的多我就顺便教一下咋加上
-
-```json
- {
-  "colors": {
-    // 字体颜色    
-    "font": "#203322",
-    // 背景颜色
-    "background": "#E6F1E3",
-    // 背景高亮颜色
-    "backgroundLight": "#F8FFF8",
-    // 高亮颜色
-    "highLight": "#336C47",
-    // tint颜色
-    "tint": "#336C47"
-  },
-  "version": 1,
-  // 预览图
-  "previewImage": "slice_bg.png",
-  "bg": {
-    // 忘记干啥的了 不建议改
-    "type": 2,
-    // 背景图片名称
-    "image": "readBg.jpg"
-  }
-}
-
- ```
-
-#### 效果图
-
-![阅读页背景设置](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景设置.png)
-![阅读页背景设置文件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景设置文件.png)
-![阅读页背景](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页背景.png)
----
-
-### 广告相关
-
----
-
-* 禁用GDT广告
-
-* 检查更新
-
-* 禁用每日导读广告(1.2.8+|812+)
-
-* 禁用书架活动弹框(1.1.8+)
-
-* 禁用书架右下角浮窗
-
-* 禁用底部导航栏中心广告
-
-* 禁用我-中心广告
-
-* 阅读页相关
-
-  * 浮窗广告(1.2.6|812+)
-
-  * 打赏小剧场(1.2.8+|812+)
-  * 章节章末一刀切(1.2.9+|812+)
-  * 章末本章说(1.2.9+|812+)
-  * 章末新人推书(1.2.9+|812+)
-  * 章末福利(1.2.9+|812+)
-  * 章末广告(1.2.9+|812+)
-  * 章末求票(1.2.9+|812+)
-  * 章末底部月票打赏红包(827+||1.3.1+)
-
-* 禁止检测更新(1.0.7+)
-
-#### 效果图
-
-![阅读页-章末](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/阅读页-章末.jpg)
-
----
-
-### 屏蔽相关
-
----
-
-* 屏蔽选项列表(自选)
-
-  * 0.搜索-发现(热词)
-
-  * 1.搜索-热门作品榜
-  * 2.搜索-人气标签榜
-  * 3.搜索-为你推荐
-  * 4.精选-主页面
-  * 5.精选-分类
-  * 6.精选-免费-免费推荐
-  * 7.精选-分类-全部作品
-  * 8.精选-免费-新书入库
-  * 9.精选-畅销精选、主编力荐等更多
-  * 10.精选-新书强推、三江推荐
-  * 11.精选-排行榜(1.2.2+|808+)
-  * 12.精选-新书(1.1.4+)
-  * 13.每日导读
-  * 14.精选-漫画(1.2.8+|812+)
-  * 15.精选-漫画-其他(1.2.8+|812+)
-
-* 需要屏蔽的作者列表
-
-        ps:填入完整作者名称
-
-* 需要屏蔽的书名关键词
-
-        ps:单字威力巨大!!!甚至可能导致看上去布局显示错乱。多个关键词使用方法举例:"心声;四合院;不想",用英文的";"
-
-* 书类型增强屏蔽(1.1.2+)
-
-        ps:开启后所有类型里面关键词对上就会触发屏蔽，如"仙侠"则会"古典仙侠"、"XX仙侠"只要包括了"仙侠"二字，所以依然是单字威力巨大!!!
-
-* 需要屏蔽书的类型
-
-      ps:填入完整的如"仙侠"，但是"古典仙侠"不会被屏蔽，需要再加入"古典仙侠"。多个关键词使用方法如上
-
-#### 效果图
-
-![精选-主页面](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/精选-主页面.jpg)
-![全部作品-分类](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/全部作品-分类.jpg)
-
----
-
-### 闪屏页相关
-
----
-
-* 闪屏页开关
-
-        ps:启用后恢复网络请求
-
-#### 自定义闪屏页
-
-* 启用显示全部按钮
-
-        ps:关闭可以理解为纯图片无发触发自定义跳转
-
-* 自定义触发跳转书籍详情
-
-        ps:可选跳转到书籍
-
-* 自定义闪屏类型
-
-        ps:原生的2种类型，上滑点击和纯按钮
-
-* 自定义闪屏图片
-
-        ps:需要本地图片的绝对地址,用的是原生方法,只修改了其中图片路径的地址参数,如是起点私有目录下的无需存储权限
-
----
-
-### 隐藏控件相关
-
-* 主页-隐藏控件
-
-  * 隐藏主页顶部宝箱提示(1.2.5+|812+)
-
-  * 隐藏书架-每日导读(1.1.9+)
-  * 隐藏底部导航栏红点
-  * 隐藏底部导航栏-发现
-
-* 搜索一刀切(1.1.4+)
-
-        可能导致搜索历史也无法看见喔!~
-
-* 彻底关闭青少年模式弹框(1.0.2+)
-
-* 隐藏漫画轮播图广告(1.2.8+|812+)
-
-* 隐藏我-右上角消息红点(1.2.4+|812+)
-
-* 我-隐藏控件(自选,开启后重启应用即可获取到列表)
-
-* 书籍详情-隐藏控件(自选，开启后重启应用生效)(1.2.3+|808+)
-
-  * 出圈指数
-
-  * 荣誉标签
-  * QQ群
-  * 书友圈
-  * 书友榜
-  * 月票金主
-  * 本书看点|中心广告
-  * 浮窗广告
-  * 同类作品推荐
-  * 看过此书的人还看过
-
-#### 效果图
-
-![书架](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/书架.jpg)
-![我-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/我-隐藏控件.jpg)
-![搜索一刀切](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/搜索一刀切.jpg)
-![书籍详情-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/书籍详情-隐藏控件.jpg)
-
----
-
-### 替换相关
-
-* 净化替换章节标题以及正文
-
-        不清楚或者不明白的请不要随意打开使用。可使用正则表达式或者字符串进行替换,开关需要重启应用,启用后规则更改实时生效
-
-        规则的最简单使用例子:如果正文中出现"东躲XC"、"XZ"，被屏蔽的词为"西藏",即可用正则表达式"XC|XZ"替换为"西藏"。亦或者感觉主角或配角名冒犯到你，即可新建一个规则，"龙傲天" -> "凤傲天"
-
-        规则是全局的，目前不支持指定书名等。规则最好不要重复或者冲突，不然可能会出现无法预料的错误,这种时候删除重复或者冲突的规则即可。如果不知道怎么用正则表达式，可以去网上学习一下或者酷安私信我，如果我有空，会帮你搞定
-
-        点按编辑，长按删除
-
-        目前只是简单的测试一下，后续不一定会继续维护或者更新此功能
-
-#### 效果图
-
-![书籍详情-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/替换主角名-0.jpg)
-![书籍详情-隐藏控件](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/替换主角名-1.jpg)
-
----
-
-## 截图
-
-![image1](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/1.jpg)
-![image2](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/2.png)
-![image3](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/3.png)
-![image4](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/4.png)
-![image5](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/5.png)
-![image6](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/6.png)
-![image7](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/7.jpg)
-![image8](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/8.png)
-![image9](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/9.jpg)
-![image10](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/10.png)
----
-
 ## 常见问题
+
+* 如提示 "**Manifest文件中Activity/Service/Permission的声明有问题或者Permission权限未授予**"
+把 "**广告配置**" 中 "**GDT(TX)广告**" 去掉勾选
+
+* 如提示 "**激励广告拉取失败,详细错误码:50000**" 则检查设备网络，**DNS**或者**Hosts** 是否拦截了"**e.qq.com**"、"**gdt.qq.com**"、"**gtimg.cn**"、"**gdtimg.com**"域名
 
 * 开关功能不生效
 
@@ -336,6 +60,10 @@
 
         这种情况一般是因为本地已经有缓存了,最简单的方法是清除起点的数据,把要开的功能提前开好
 
+* 开启自定义启动图无效?
+
+        多进几次起点等启动图全部下载完成就会开始随机
+
 * 开启去广告无效
 
         和上述一致，清数据重启即可
@@ -354,11 +82,6 @@
 
 * 部分功能之前好好的，突然失效，**1.2.9+ 配置文件模型改变，部分设定需要重新设置!!!** 开关以及配置都正常却失效日志也没有。可以理解为被热修复了，一般来说更新最新版即可或者提Issues
 
-* 如提示 "**Manifest文件中Activity/Service/Permission的声明有问题或者Permission权限未授予**"
-把 "**广告配置**" 中 "**GDT(TX)广告**" 去掉勾选
-
-* 如提示 "**激励广告拉取失败,详细错误码:50000**" 则检查设备网络，**DNS**或者**Hosts** 是否拦截了"**e.qq.com**"、"**gdt.qq.com**"、"**gtimg.cn**"、"**gdtimg.com**"域名
-
 ---
 
 ## Lspatch使用说明
@@ -368,6 +91,20 @@
 * 已支持动态配置(1.1.2+)
 
 * 因为修改了签名,所以快速登录无法使用,只能用手机号登录!!!所以如果可以还是使用 Xp 模式
+
+---
+
+## 截图
+
+![image1](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/1.png)
+![image2](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/2.png)
+![image3](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/3.png)
+![image4](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/4.png)
+![image5](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/5.png)
+![image6](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/6.png)
+![image7](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/7.png)
+![image8](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/8.png)
+![image9](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/9.png)
 
 ---
 
@@ -397,7 +134,3 @@
 </table>
 
 ---
-
-## 亦或者饿了么扫个码支持也行
-
-![image7](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/elm.png)
