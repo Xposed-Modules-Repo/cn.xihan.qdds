@@ -1,11 +1,12 @@
 # QDReadHook
 
-[![](https://data.jsdelivr.com/v1/package/gh/xihan123/QDReadHook/badge?style=rounded)](https://www.jsdelivr.com/package/gh/xihan123/QDReadHook)
 ![above](https://img.shields.io/badge/Android-8.0%20or%20above-brightgreen.svg)
 [![Android CI](https://github.com/xihan123/QDReadHook/actions/workflows/build.yml/badge.svg)](https://github.com/xihan123/QDReadHook/actions/workflows/build.yml)
 [![Latest Release](https://img.shields.io/github/release/xihan123/QDReadHook.svg)](https://github.com/xihan123/QDReadHook/releases)
 ![downloads](https://img.shields.io/github/downloads/xihan123/QDReadHook/total)
 [![Blank](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total?label=LSPosed%20Repo&logo=Android&style=flat&labelColor=F48FB1&logoColor=ffffff)](https://github.com/Xposed-Modules-Repo/cn.xihan.qdds/releases)
+[![CodeFactor](https://www.codefactor.io/repository/github/xihan123/qdreadhook/badge/master)](https://www.codefactor.io/repository/github/xihan123/qdreadhook/overview/master)
+[![Codebeat badge](https://codebeat.co/badges/2d20acb4-21ad-450e-9580-e736a484fdf0)](https://codebeat.co/projects/github-com-xihan123-qdreadhook-master)
 
 ---
 
@@ -17,7 +18,7 @@
 
 * 设置页面在:起点->我的->左上角设置->阅读设置/模块设置(长按)(1.1.2+)
 
-* 目前支持 758~768、772、776、780、784、788、792、796、800、804、808、812、827、834、842、843、850、854、858、860、868、872、878版本
+* 目前支持 758~768、772、776、780、784、788、792、796、800、804、808、812、827、834、842、843、850、854、858、860、868、872、878、884版本
 
 * 暂时提高版本号范围以支持一些不容易改变的类
 
@@ -108,16 +109,16 @@
 
 ## 截图
 
-![image1](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/1.png)
-![image2](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/2.png)
-![image3](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/3.png)
-![image4](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/4.png)
-![image5](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/5.png)
-![image6](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/6.png)
-![image7](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/7.png)
-![image8](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/8.png)
-![image9](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/9.png)
-![image10](https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/10.png)
+![image1](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/1.png)
+![image2](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/2.png)
+![image3](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/3.png)
+![image4](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/4.png)
+![image5](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/5.png)
+![image6](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/6.png)
+![image7](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/7.png)
+![image8](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/8.png)
+![image9](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/9.png)
+![image10](https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/10.png)
 
 ---
 
@@ -133,10 +134,10 @@
 
 <tr>
 <td>
-<img src="https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/zfb.jpg" width=270 >
+<img src="https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/zfb.jpg" width=270 >
 </td>
 <td>
-<img src="https://cdn.jsdelivr.net/gh/xihan123/QDReadHook@master/Screenshots/wx.png" width=270 >
+<img src="https://jihulab.com/xihan123/QDReadHook/-/raw/master/Screenshots/wx.png" width=270 >
 </td>
 </tr>
 
