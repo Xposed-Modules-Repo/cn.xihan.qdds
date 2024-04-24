@@ -6,6 +6,8 @@
 ![downloads](https://img.shields.io/github/downloads/xihan123/QDReadHook/total)
 [![Blank](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total?label=LSPosed%20Repo&logo=Android&style=flat&labelColor=F48FB1&logoColor=ffffff)](https://github.com/Xposed-Modules-Repo/cn.xihan.qdds/releases)
 [![license](https://img.shields.io/github/license/xihan123/QDReadHook.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![All Contributors](https://img.shields.io/github/all-contributors/xihan123/QDReadHook?color=ee8449&style=flat-square)](#contributors)
+
 
 ---
 
@@ -211,7 +213,11 @@
 
 ## 打赏
 
-## 如果觉得这个模块对您有用，可扫描下方二维码随意打赏,要是能打赏个 10.24 🐵就太👍了。您的支持就是我更新的动力
+### 入驻了 [爱发电](https://afdian.net/a/xihan123)，点击前往我的个人主页
+
+## 如果觉得这个模块对您有用，可扫描下方二维码或者 [爱发电](https://afdian.net/a/xihan123) 随意打赏,要是能打赏个 10.24 🐵就太👍了。您的支持就是我更新的动力
+
+
 
 <table>
 <tr>
@@ -235,3 +241,30 @@
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=xihan123/QDReadHook&type=Date)](https://star-history.com/#xihan123/QDReadHook&Date)
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vvb2060"><img src="https://avatars.githubusercontent.com/u/26996262?v=4?s=100" width="100px;" alt="南宫雪珊"/><br /><sub><b>南宫雪珊</b></sub></a><br /><a href="https://github.com/xihan123/QDReadHook/commits?author=vvb2060" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td align="center" size="13px" colspan="7">
+        <img src="https://raw.githubusercontent.com/all-contributors/all-contributors-cli/1b8533af435da9854653492b1327a23a4dbd0a10/assets/logo-small.svg">
+          <a href="https://all-contributors.js.org/docs/en/bot/usage">Add your contributions</a>
+        </img>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
