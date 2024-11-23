@@ -1,8 +1,8 @@
 ![QDReadHook](https://socialify.git.ci/xihan123/QDReadHook/image?description=1&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Ft3.picb.cc%2F2023%2F05%2F30%2FIj8tn6.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light)
 
-![above](https://img.shields.io/badge/Android-8.0%20or%20above-brightgreen.svg)
+<!-- ![above](https://img.shields.io/badge/Android-8.0%20or%20above-brightgreen.svg)
 [![Android CI](https://github.com/xihan123/QDReadHook/actions/workflows/build.yml/badge.svg)](https://github.com/xihan123/QDReadHook/actions/workflows/build.yml)
-[![Latest Release](https://img.shields.io/github/release/xihan123/QDReadHook.svg)](https://github.com/xihan123/QDReadHook/releases)
+[![Latest Release](https://img.shields.io/github/release/xihan123/QDReadHook.svg)](https://github.com/xihan123/QDReadHook/releases) -->
 ![downloads](https://img.shields.io/github/downloads/xihan123/QDReadHook/total)
 [![Blank](https://img.shields.io/github/downloads/Xposed-Modules-Repo/cn.xihan.qdds/total?label=LSPosed%20Repo&logo=Android&style=flat&labelColor=F48FB1&logoColor=ffffff)](https://github.com/Xposed-Modules-Repo/cn.xihan.qdds/releases)
 [![license](https://img.shields.io/github/license/xihan123/QDReadHook.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
@@ -13,7 +13,7 @@
 
 ### 注意事项
 
-* 使用前注意给予起点存储权限
+* ~~使用前注意给予起点存储权限~~3.2.5+无需存储权限
 
 * 设置页面在:起点->我的->左上角设置->阅读设置/模块设置(长按)(1.1.2+)
 
@@ -29,13 +29,15 @@
 
 * ~~900、906、916、924、932、938、944、950、958、970、980、994~~
 
-* ~~1005、1020、1030 ~ 1105、1106 ~ 1146、1196 ~ 1299~~
+* ~~1005、1020、1030 ~ 1105、1106 ~ 1146、1196 ~ 1299、~1296 ~ 1336~~
 
-* ~~1296~~ 1336 ~ 1499
+* 1416 ~ 1499
 
 ### 配置文件路径
 
-* 1.2.7+ 配置文件路径为 "/sdcard/Download/QDReader",会自行移动原配置文件并删除原配置文件目录,注意原配置文件目录不要有重要文件
+* ~~1.2.7+ 配置文件路径为 "/sdcard/Download/QDReader",会自行移动原配置文件并删除原配置文件目录,注意原配置文件目录不要有重要文件~~
+
+* 3.2.5+ 配置文件为 "/storage/emulated/$userId/Android/data/$packageName/files/QDReadHook"
 
 ### 共存包名设定
 
@@ -77,11 +79,11 @@
 
     感谢大家的支持与配合！
 
-### [大部分功能和介绍列表](https://xihan123.github.io/QDReadHook/docs/app/cn.xihan.qdds.hook/index.html)
+<!-- ### [大部分功能和介绍列表](https://xihan123.github.io/QDReadHook/docs/app/cn.xihan.qdds.hook/index.html) -->
 
 ### 收集服务特别声明
 
-* 收集书籍信息、阅读时长、书架的书ID，开发统计和推荐模型。该功能完全自愿开启，基于cloudflare，部分地区可能速度不理想，可以的话优选一下ip,域名是https://collect.qidian.lat/
+* 收集书籍信息、阅读时长、书架的书ID，开发统计和推荐模型。该功能完全自愿开启
 
 * 收集服务仅供统计和训练模型使用，不提供任何其他形式的服务，也不参与任何商业行为
 
@@ -183,11 +185,19 @@
 
       MIUI 可以尝试关闭MIUI优化，有接到反馈关闭该功能就正常了
 
+* 试用模式、正文章节异常、红包广场无限加载
+
+      1.试用模式必开自定义QIMEI且不能为空
+      
+      2.正文章节异常，提示账号风险、设备异常、环境异常等原因有以下几点：QIMEI是空的、试用模式，、你开了自定义QIMEI但是没填、真 · 账号异常等，具体还是询问起点客服
+
+      3.参考上述1
+
 ---
 
 ## Lspatch 使用说明
 
-* 安装后启动前需要授予起点存储权限!!!要不然无法读取配置文件则不会生效,或者你设定错了可能会使用默认配置
+* ~~安装后启动前需要授予起点存储权限!!!要不然无法读取配置文件则不会生效,或者你设定错了可能会使用默认配置~~3.2.5+无需存储权限
 
 * 已支持动态配置(1.1.2+)
 
