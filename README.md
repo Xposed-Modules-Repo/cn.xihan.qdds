@@ -36,11 +36,11 @@
 
 * ~~900、906、916、924、932、938、944、950、958、970、980、994~~
 
-* ~~1005、1020、1030 ~ 1105、1106 ~ 1146、1196 ~ 1299、~1296 ~ 1336~~
+* ~~1005、1020、1030 ~ 1105、1106 ~ 1146、1196 ~ 1299、1296 ~ 1336~~
 
 * ~~1416 ~ 1499~~
 
-* 1496 - X
+* 1496 ~ X
 
 ### 配置文件路径
 
@@ -65,7 +65,7 @@
 
 ### 模块下载地址:
 
-* [releases](https://github.com/xihan123/QDReadHook/releases)
+* [releases](https://github.com/Xposed-Modules-Repo/cn.xihan.qdds/releases)
 
 * [蓝奏云](https://xihan.lanzouj.com/b042w7oqb) 密码:9ikq
 
